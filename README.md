@@ -1,24 +1,61 @@
 # to study Gauche
 
-## REPL
+
+## 実行
+
+### REPL
 
 `gosh` or `rlwrap gosh`
 
 exit: `(exit)`
 
-## Run
+### Run
 
 `gosh xxx.scm`
 
-## Gauche ドキュメント
+----
+
+## ドキュメント
 
 ### Chrome
 
 - `chrome://settings/searchEngines` を開いて、
 - gosh: `http://practical-scheme.net/gauche/man/?l=jp&p=%s` を設定。
 
+### 最新化・ビルド
+[Gaucheを常に最新に保つ。](http://ayato.hateblo.jp/entry/20130521/1369149623)
 
-## Pane
+Clone:
+
+```bash
+git clone https://github.com/shirok/Gauche.git
+cd Gauche
+```
+
+Install:
+
+```bash
+./DIST gen
+./configure
+make
+make check
+make install
+```
+
+----
+
+## Emacs操作
+
+### GUI Emacs起動
+
+`~/.zshrc`: `alias em="open -a Emacs"`
+
+### scheme-mode
+
+`C-c G`: ウィンドウを開いて gosh
+`C-x C-e`: 式の評価
+
+### Pane
 
 - `C-x 2` : 上下分割。
 - `C-x 3` : 左右分割。
