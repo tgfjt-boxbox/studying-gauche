@@ -1,6 +1,6 @@
 ;; -*- coding: utf-8 -*-
 
-;; 08 Sep 2014
+;; 09 Sep 2014
 
 ;; https://www.shido.info/lisp/scheme3.html
 ;; cons [コンスセル]
